@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./components/UI/Card";
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 const App = () => {
   const expenses = [
@@ -25,6 +26,7 @@ const App = () => {
   ];
   return (
     <div className="app">
+      <NewExpense />
       <Expenses items={expenses} />
     </div>
   );
